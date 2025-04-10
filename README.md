@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-z3l_GBPIM-)
+- Live Site URL: [Live Demo](https://intro-section-with-dropdown-navigation-main-kappa.vercel.app/)
 
 ## My Process
 
