@@ -20,52 +20,64 @@ export default function Hero() {
         
         {/* Client Logos */}
         <div className="flex justify-between items-center gap-4 md:gap-10 mt-4 md:mt-12">
-          <Image 
-            src="/images/client-databiz.svg" 
-            alt="Databiz" 
-            width={114} 
-            height={20} 
-          />
-          <Image 
-            src="/images/client-audiophile.svg" 
-            alt="Audiophile" 
-            width={73} 
-            height={36} 
-          />
-          <Image 
-            src="/images/client-meet.svg" 
-            alt="Meet" 
-            width={90} 
-            height={20} 
-          />
-          <Image 
-            src="/images/client-maker.svg" 
-            alt="Maker" 
-            width={83} 
-            height={24} 
-          />
+          <div className="h-[20px] w-[114px] relative">
+            <Image 
+              src="/images/client-databiz.svg" 
+              alt="Databiz" 
+              fill
+              style={{ objectFit: 'contain' }}
+              sizes="114px"
+            />
+          </div>
+          <div className="h-[36px] w-[73px] relative">
+            <Image 
+              src="/images/client-audiophile.svg" 
+              alt="Audiophile" 
+              fill
+              style={{ objectFit: 'contain' }}
+              sizes="73px"
+            />
+          </div>
+          <div className="h-[20px] w-[90px] relative">
+            <Image 
+              src="/images/client-meet.svg" 
+              alt="Meet" 
+              fill
+              style={{ objectFit: 'contain' }}
+              sizes="90px"
+            />
+          </div>
+          <div className="h-[24px] w-[83px] relative">
+            <Image 
+              src="/images/client-maker.svg" 
+              alt="Maker" 
+              fill
+              style={{ objectFit: 'contain' }}
+              sizes="83px"
+            />
+          </div>
         </div>
       </div>
       
       {/* Right Content - Hero Image */}
       <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-        <div className="hidden md:block">
+        <div className="hidden md:block relative w-full max-w-[480px] h-[640px]">
           <Image 
             src="/images/image-hero-desktop.png" 
             alt="Hero" 
-            width={480} 
-            height={640} 
-            className="w-full h-auto max-w-[480px]"
+            fill
+            style={{ objectFit: 'contain' }}
+            sizes="(max-width: 768px) 100vw, 480px"
             priority
           />
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden relative w-full h-[281px]">
           <Image 
             src="/images/image-hero-mobile.png" 
             alt="Hero" 
-            width={375} 
-            height={281} 
-            className="w-full h-auto"
+            fill
+            style={{ objectFit: 'contain' }}
+            sizes="100vw"
             priority
           />
         </div>
