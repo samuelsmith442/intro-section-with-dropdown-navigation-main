@@ -4,22 +4,24 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-32 lg:px-40 py-8 md:py-16 gap-10">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-32 lg:px-40 py-8 md:py-16 gap-10 min-h-[calc(100vh-80px)]">
       {/* Left Content */}
-      <div className="w-full md:w-1/2 text-center md:text-left">
-        <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-almost-black mb-8 md:mb-12 leading-tight">
-          Make remote work
-        </h1>
-        <p className="text-medium-gray text-base md:text-lg mb-8 md:mb-12 max-w-md mx-auto md:mx-0">
-          Get your team in sync, no matter your location. Streamline processes, 
-          create team rituals, and watch productivity soar.
-        </p>
-        <button className="bg-almost-black text-almost-white hover:bg-almost-white hover:text-almost-black border-2 border-almost-black font-bold py-3 px-8 rounded-2xl transition-colors mb-16">
-          Learn more
-        </button>
+      <div className="w-full md:w-1/2 text-center md:text-left flex flex-col">
+        <div>
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-almost-black mb-8 md:mb-12 leading-tight">
+            Make remote work
+          </h1>
+          <p className="text-medium-gray text-base md:text-lg mb-8 md:mb-12 max-w-md mx-auto md:mx-0">
+            Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+          <button className="bg-almost-black text-almost-white hover:bg-almost-white hover:text-almost-black border-2 border-almost-black font-bold py-3 px-8 rounded-2xl transition-colors">
+            Learn more
+          </button>
+        </div>
         
-        {/* Client Logos */}
-        <div className="flex justify-between items-center gap-4 md:gap-10 mt-4 md:mt-12">
+        {/* Client Logos - Fixed position at bottom */}
+        <div className="flex justify-between items-center gap-4 md:gap-10 mt-auto pt-10 md:pt-16 pb-4 md:pb-0">
           <div className="h-[20px] w-[114px] relative">
             <Image 
               src="/images/client-databiz.svg" 
